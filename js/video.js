@@ -47,15 +47,15 @@ document.querySelector("#mute").addEventListener("click", function() {
 	console.log("Muted is " + video.muted);
 	if (video.muted == true) {
 		video.muted = false;
-		document.querySelector('#mute').innerHTML = 'Unmute'
+		document.querySelector('#mute').innerHTML = 'Mute'
 
 	} 
 	else 
 	{video.muted = true;
-	document.querySelector('#mute').innerHTML = 'Mute'
+		document.querySelector('#mute').innerHTML = 'Unmute'
+	
 	}
 });
-
 
 document.querySelector("#slider").addEventListener("click", function(){
 	console.log("the current volume is " + video.volume)
